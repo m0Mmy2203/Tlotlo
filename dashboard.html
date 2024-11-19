@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>MyFit Dashboard</title>
+</head>
+<body>
+    
+<main class="grid grid--main">
+
+    <!-- Header -->
+    <header class="header bg-dark">
+        <h1>Hello, Tlotlo</h1> 
+        <div class="header__search">
+            <img src="img/Search.svg" alt="Search Icon" class="img-size--small">
+        </div>
+    </header>
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar bg-dark">
+        <div class="logo">
+            <img src="img/logo.svg" alt="Dashboard Logo" class="logo__img"> 
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+               <li class="nav__item"> <img src="img/Stopwatch.svg" alt="Stopwatch Icon" class="img-size--small"> </li>
+               <li class="nav__item"> <img src="img/Calendar.svg" alt="Calendar Icon" class="img-size--small"></li>
+               <li class="nav__item"> <img src="img/Clipboard.svg" alt="Clipboard Icon" class="img-size--small"></li>
+               <li class="nav__item"> <img src="img/Settings.svg" alt="Settings Icon" class="img-size--small"></li>
+               <li class="nav__item"> <img src="img/help.svg" alt="Help Icon" class="img-size--small"></li>
+            </ul>
+        </nav>
+        <div class="sidebar__help">
+            <a href="#"><i class="icon-help"></i></a>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <section class="dashboard grid grid--middle">
+        <!-- Stats Section -->
+        <div class="cards grid grid--cards">
+            <div class="card2 bg-dark">
+                <h3>Protein</h3>
+                <p>130 Cal</p>
+                <small>9.0 Kcal</small>
+                <img src="img/protein.svg" alt="Protein Icon" class="img-size--small">
+            </div>
+            <div class="card2  bg-dark">
+                <h3>Carbs</h3>
+                <p>130 Cal</p>
+                <small>9.0 Kcal</small>
+                <img src="img/carbs.svg" alt="Carbs Icon" class="img-size--small">
+            </div>
+            <div class="card2 bg-dark">
+                <h3>Fats</h3>
+                <p>130 Cal</p>
+                <small>9.0 Kcal</small>
+                <img src="img/fats.svg" alt="Fats Icon" class="img-size--small">
+            </div>
+            <div class="card2  bg-dark">
+                <h3>Water</h3>
+                <p>130 Cal</p>
+                <small>5 Liters</small>
+                <img src="img/water.svg" alt="Water Icon" class="img-size--small">
+            </div>
+        </div>
+
+        <!-- Bottom Stats Section -->
+        <section class="bottom-stats grid grid--bottom-stats bg-dark">
+            <div class="stat-item group">
+                <h3>Weight Training</h3>
+                <p>78 Kg</p>
+                <img src="img/weights.svg" alt="Weights Icon" class="img-size--large">
+            </div>
+            <div class="stat-item group">
+                <h3>Total Distance</h3>
+                <p>10 Km</p>
+                <img src="img/Walk.svg" alt="Walk Icon" class="img-size--large">
+            </div>
+            <div class="stat-item group">
+                <h3>Average Speed</h3>
+                <p>10 Km/h</p>
+                <img src="img/average speed.svg" alt="Speed Icon" class="img-size--large">
+            </div>
+        </section>
+
+        <!-- To-Do List Section -->
+        <section class="ToDoList bg-dark">
+            <h1 class="card">To Do List</h1>
+            <form id="taskForm" class="dashboard-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="date" id="dueDate" required>
+                <select id="priority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button class="addTask" type="submit">Add Task</button>
+                <!-- Task List : dynamic content gets put in here-->
+                <ul id="taskList"></ul>
+            </form>
+        </section>
+    </section>
+
+    <!-- Activity Tracking Section -->
+    <section class="activity-tracking grid--side">
+        <section class="bg-dark card">
+            <div class="group">
+                <h3>Calories</h3>
+                <p>Consumed: 130 Cal</p>
+                <p>Remaining: 60 Cal</p>
+                <img src="img/calories.svg" alt="Calories Icon" class="img-size--large">
+            </div>
+            <div class="group">
+                <h3>Heart</h3>
+                <p>Today: 110 Bp</p>
+                <p>Yesterday: 130 Bp</p>
+                <img src="img/heart rate.svg" alt="Heart Rate Icon" class="img-size--large">
+            </div>
+            <div class="group"> 
+                <h3>Steps</h3>
+                <p>Today: 10,203</p>
+                <p>Yesterday: 6,457</p>
+                <img src="img/steps.svg" alt="Steps Icon" class="img-size--small">
+            </div>
+        </section>     
+    </section>   
+
+</main>
+<script src="js/dashboard.js"></script> 
+</body>
+</html>
+
